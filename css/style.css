@@ -58,7 +58,7 @@
     font-family: "Arial";
 }
 
-.button a{
+.button a {
     border-radius: 35px;
     background-color: transparent;
     border: 3px solid #f4d633;
@@ -68,4 +68,12 @@
     font-weight: bold;
     font-family: "Arial";
     max-width: 540px;
+}
+
+.phone1 {
+    font-size: 16px;
+    line-height: 50px;
+    color: #ffffff;
+    font-family: "Arial";
+    text-decoration: none;
 }
