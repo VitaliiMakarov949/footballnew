@@ -7,6 +7,9 @@
     color: #ffffff;
     font-weight: bold;
     font-family: "Arial";
+    border-radius: 20px;
+    background-color: #acacaa;
+    max-width: 540px;
 }
 
 .main {
@@ -50,8 +53,19 @@
 }
 
 .text5 {
-color: #1e3c6f;
-font-weight: bold;
-font-family: "Arial";
+    color: #1e3c6f;
+    font-weight: bold;
+    font-family: "Arial";
 }
 
+.button a{
+    border-radius: 35px;
+    background-color: transparent;
+    border: 3px solid #f4d633;
+    font-size: 18px;
+    text-decoration: none;
+    color: #f4d633;
+    font-weight: bold;
+    font-family: "Arial";
+    max-width: 540px;
+}
