@@ -79,12 +79,6 @@ h1 {
     font-family: "Arial";
 }
 
-.text4 {
-    font-size: 20px;
-    color: #fff;
-    font-weight: bold;
-    padding: 61px 8px;
-}
 
 
 .footer {
@@ -106,4 +100,29 @@ h1 {
     color: #f4d633;
     max-width: 540px;
     padding: 25px 2px;
+}
+
+.zirka {
+    padding: 61px 8px
+}
+
+.text4 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    padding: 61px 8px;
+}
+.geo {
+    padding: 27px 9px;
+}
+.inst {
+    padding: 27px 9px 
+}
+.tg {
+    padding: 27px 10px;
+}
+.since {
+    font-size: 12px;
+    color: #204075;
+    text-align: left;
 }
