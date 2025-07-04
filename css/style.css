@@ -12,7 +12,10 @@ body {
 .header {
     background-color: #1d3b6e;
 }
-
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
 .wrapper {
     max-width: 960px;
     margin: 0 auto;
@@ -28,6 +31,7 @@ body {
     justify-content: center;
     border-radius: 20px;
     background-color: #acacaa;
+    text-decoration: none;
 }
 .text a {
     text-transform: uppercase;
