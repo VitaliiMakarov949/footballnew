@@ -12,13 +12,27 @@ body {
 .header {
     background-color: #1d3b6e;
 }
+
 .flex-between {
     display: flex;
     justify-content: space-between;
 }
+.flex-around{
+    display: flex;
+    justify-content: space-around;
+}
+.flex-direction {
+    display: flex;
+    flex-direction: row;
+}
 .align-items {
     display: flex;
     align-items: center;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 .wrapper {
     max-width: 960px;
@@ -35,20 +49,23 @@ body {
     justify-content: center;
     border-radius: 20px;
     background-color: #acacaa;
+    text-decoration: none;
 }
+
 .text a {
     text-transform: uppercase;
     color: #fff;
     font-weight: bold;
     text-decoration: none;
-
 }
-
+.ul {
+    list-style: none;
+}
 .text li {
     padding: 16px 30px;
 }
 
-.phone a{
+.phone a {
     padding: 35px 9px;
     text-decoration: none;
 }
@@ -59,8 +76,6 @@ body {
     color: #fff;
 }
 
-.main {
-}
 
 .text2 {
     color: #fff;
@@ -89,8 +104,6 @@ h1 {
     font-weight: bold;
     font-family: "Arial";
 }
-
-
 
 .footer {
     background-color: #f4d633;
@@ -125,15 +138,19 @@ h1 {
     font-weight: bold;
     padding: 61px 8px;
 }
+
 .geo {
     padding: 27px 9px;
 }
+
 .inst {
-    padding: 27px 9px 
+    padding: 27px 9px
 }
+
 .tg {
     padding: 27px 10px;
 }
+
 .since {
     font-size: 12px;
     color: #204075;
