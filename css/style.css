@@ -7,6 +7,7 @@
 body {
     background-image: radial-gradient(circle at center, #34619d 0%, #34619d 1%, #1d3b6e 100%);
     font-family: "Arial";
+    cursor: url(../img/cursor.cur) default;
 }
 
 .wrapper {
@@ -105,6 +106,7 @@ h1 {
 
 .footer {
     background-color: #f4d633;
+    padding: 14px 0px 14px;
 }
 
 .text5 {
@@ -154,15 +156,13 @@ h1 {
     color: #204075;
     text-align: left;
 }
-
-.icongeo {
-    padding: 27px 9px;
+a {
+    cursor: url(../img/cursor2.cur), default;
+    transition: all .9s ease;
 }
-
-.iconinst {
-    padding: 27px 10px 28px 9px;
+li>a:hover {
+    color: yellow;
 }
-
-.icontg {
-    padding: 27px 0px 28px 10px;
+.button>a:hover {
+    color: black;
 }
