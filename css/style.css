@@ -7,15 +7,23 @@
 body {
     background-image: radial-gradient(circle at center, #34619d 0%, #34619d 1%, #1d3b6e 100%);
     font-family: "Arial";
-    cursor: url(../img/cursor.cur) default;
+    cursor: url(../img/cursor.cur), default;
+    padding-top: 80px;
+    padding-bottom: 60px;
 }
 
 .wrapper {
-    max-width: 960px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 15px;
 }
-
+header {
+    position: fixed;
+    top: 0;
+    left: 15%;
+    width: 100%;
+    z-index: 100;
+}
 .flex-between {
     display: flex;
     justify-content: space-between;
@@ -105,6 +113,10 @@ h1 {
 }
 
 .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: #f4d633;
     padding: 14px 0px 14px;
 }
@@ -165,4 +177,10 @@ li>a:hover {
 }
 .button>a:hover {
     color: black;
+}
+
+.mainball {
+    position: absolute;
+    top: 77px;
+    right: 10px;
 }
