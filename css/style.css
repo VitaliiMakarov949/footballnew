@@ -174,12 +174,11 @@ li>a:hover {
 }
 .mainball {
     position: relative;
-    min-height: 500px;
 }
 .mainball img {
     position: absolute;
-    bottom: -150px;
-    right: -275px;    
+    bottom: 0px;
+    right: 0px;    
 }
 .main_text {
     padding: 120px 35px;
