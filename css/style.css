@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html {
+    font-size: 1px;
+}
 body {
     background-image: radial-gradient(circle at center, #34619d 0%, #34619d 1%, #1d3b6e 100%);
     font-family: "Arial";
@@ -12,9 +14,9 @@ body {
 }
 
 .wrapper {
-    max-width: 1000px;
+    max-width: 1000rem;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 15rem;
 }
 header {
     width: 100%;
@@ -42,38 +44,37 @@ header {
     align-items: end;
 }
 
-.manager {
-    padding: 22px 1px;
+.logo__manager {
+    padding: 22rem 1rem;
 }
 
-.text {
+.header__text {
     display: flex;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 20rem;
     background-color: rgba(172, 172, 170, 0.3);
     text-decoration: none;
 }
 
-.text a {
+.header__text a {
     text-transform: uppercase;
     color: #fff;
     font-weight: bold;
     text-decoration: none;
 }
-.ul {
+
+.header__text li {
     list-style: none;
-}
-.text li {
-    padding: 16px 30px;
+    padding: 16rem 30rem;
 }
 
-.phone a {
-    padding: 35px 9px;
+.header__phone a {
+    padding: 35rem 9rem;
     text-decoration: none;
 }
 
 .phone1 {
-    font-size: 16px;
+    font-size: 16rem;
     line-height: 3.1em;
     color: #fff;
 }
@@ -82,22 +83,22 @@ header {
 .text2 {
     color: #fff;
     font-style: italic;
-    padding: 10px 1px;
+    padding: 10rem 1rem;
 }
 
 h1 {
-    width: 687px;
-    font-size: 48px;
+    width: 687rem;
+    font-size: 48rem;
     text-transform: uppercase;
     color: #fff;
     font-weight: 800;
-    padding: 7px 1px;
+    padding: 7rem 1rem;
 }
 
 .text1 {
     color: #fff;
-    padding: 16px 1px;
-    margin-bottom: 25px;
+    padding: 16rem 1rem;
+    margin-bottom: 25rem;
 }
 
 .text3 {
@@ -110,7 +111,7 @@ h1 {
 .footer {
     width: 100%;
     background-color: #f4d633;
-    padding: 14px 0px 14px;
+    padding: 14rem 0rem 14rem;
 }
 
 .text5 {
@@ -121,42 +122,42 @@ h1 {
 
 .button a {
     display: block;
-    border-radius: 35px;
+    border-radius: 35rem;
     text-align: center;
     text-transform: uppercase;
-    border: 3px solid #f4d633;
-    font-size: 18px;
+    border: 3rem solid #f4d633;
+    font-size: 18rem;
     text-decoration: none;
     color: #f4d633;
-    max-width: 340px;
-    padding: 25px 2px;
+    max-width: 340rem;
+    padding: 25rem 2rem;
 }
 
 .zirka {
-    padding: 61px 0px
+    padding: 61rem 0rem
 }
 
 .text4 {
-    font-size: 20px;
+    font-size: 20rem;
     color: #fff;
     font-weight: bold;
-    padding: 61px 8px;
+    padding: 61rem 8rem;
 }
 
 .geo {
-    padding: 27px 9px;
+    padding: 27rem 9rem;
 }
 
 .inst {
-    padding: 27px 9px
+    padding: 27rem 9rem
 }
 
 .tg {
-    padding: 27px 10px;
+    padding: 27rem 10rem;
 }
 
 .since {
-    font-size: 12px;
+    font-size: 12rem;
     color: #204075;
     text-align: left;
 }
@@ -175,16 +176,97 @@ main {
     
     
 }
-.mainball {
+.mainball img {
+    overflow: hidden;
+}
+.main_text {
+    padding: 120rem 35rem;
+}
+.ul {
+    list-style: none;
+}
+#navigation {
+    position: relative;
+}
+.text_item {
+    position: absolute;
+}
+#cancel {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+#black_bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);;
+    z-index: 2;
+    backdrop-filter: blur(4px);
+}
+#burger {
+    width: 50rem;
+    height: 5rem;
+    color: #fff;
+    transform: translateY(150%);
+    position: relative;
+}
+#burger::before,
+#burger::after {
+    content: "";
+    position: absolute;
+    width: 50rem;
+    height: 5rem;
+    left: 0;
+}
+#burger::before {
+    top: -10rem;
+}
+#burger::after {
+    bottom: -10rem;
+}
+
+@media screen and (min-width: 768rem) {
+    html {
+        font-size: .9rem;
+    }
+
+}
+
+@media screen and (min-width: 1024rem) {
+    html {
+        font-size: 1rem;
+    }
+   .mainball {
     position: absolute;
     bottom: 0;
-    right: -259px;
+    right: -259rem;
 }
 .mainball img {
     position: absolute;
-    bottom: 0px;
-    right: 0px;    
+    bottom: 0rem;
+    right: 0rem;    
 }
-.main_text {
-    padding: 120px 35px;
+}
+
+@media screen and (min-width: 1440rem) {
+    html {
+        font-size: 1.1rem;
+    }
+    
+}
+
+@media screen and (min-width: 1920rem) {
+    html {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 2200rem) {
+    html {
+        font-size: 1.7rem;
+    }
 }

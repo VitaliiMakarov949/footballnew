@@ -3,38 +3,51 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name=”viewport” content=”width=device-width, user-scalable=yes, 
-    Initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0”>     
+    <meta name="viewport" content="width=device-width, user-scalable=yes, Initial-scale=1.0, maximum-scale=2.0,
+        minimum-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Football Manager Запис на заняття з футболу</title>
 </head>
 
 <body>
-    <header class="header flex-between align-items wrapper">
-        <div class="logo">
-            <a href="index.html">
-            <picture class="manager">
-                <source srcset="img/logo.webp" type="image/webp">
-                <img src="img/logo.png" alt="">
-            </picture>
-            </a>
-        </div>
-        <nav class="text">
-            <ul class="align-items ul">
-                <li> <a href="#">Про нас</a></li>
-                <li><a href="#">Контакти</a></li>
-                <li><a href="#">Івенти</a></li>
-                <li><a href="#">Групи</a></li>
-            </ul>
-        </nav>
-        <div class="phone flex-between align-items">
-            <a href="tel:+380505055055" >
-                <picture class="phone">
-                    <source srcset="img/phone svg.webp" type="image/webp">
-                    <img src="img/phone svg.png" alt="">
-                </picture>
-            </a>
-            <p class="phone1">+38 050 505 50 55</p>
+    <div id="black_bg"></div>
+    <header class="header flex-between wrapper">
+        <div id="navigation">
+            <div>
+                <a href="index.html">
+                    <picture>
+                        <source srcset="img/logo.webp" type="image/webp">
+                        <img src="img/logo.png" alt="">
+                    </picture>
+                </a>
+            </div>
+            <nav class="header__text text">
+                <ul class="align-items text__item item">
+                    <li class="cancel"><a href="">X</a></li>
+                    <li>
+                        <a href="#">Про нас</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакти</a>
+                    </li>
+                    <li>
+                        <a href="#">Івенти</a>
+                    </li>
+                    <li>
+                        <a href="#">Групи</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__phone phone flex-between align-items">
+                <a href="tel:+380505055055" class="phone__link">
+                    <picture>
+                        <source srcset="img/phone svg.webp" type="image/webp">
+                        <img src="img/phone svg.png" alt="">
+                    </picture>
+                </a>
+                <p class="phone__link">+38 050 505 50 55</p>
+            </div>
+            <div id="burger"></div>
         </div>
     </header>
     <main class="main flex-between align-items wrapper ">
@@ -54,9 +67,9 @@
             </div>
         </section>
         <div class="mainball">
-            <picture >
-            <source srcset="img/mainball.webp" type="image/webp">
-            <img src="img/mianball.png" alt="">
+            <picture>
+                <source srcset="img/mainball.webp" type="image/webp">
+                <img src="img/mainball.png" alt="">
             </picture>
         </div>
     </main>
@@ -76,28 +89,28 @@
                             </picture>
                         </a>
                     </li>
-                        <a href="#">
+                    <a href="#">
                         <picture class="iconinst">
                             <source srcset="img/inst svg.webp" type="image/webp" class="inst">
                             <img src="img/inst svg.png" alt="">
                         </picture>
-                        </a>
+                    </a>
                     <li>
                         <a href="#">
-                        <picture>
-                            <source srcset="img/tg svg.webp" type="image/webp" class="tg">
-                            <img src="img/tg svg.png" alt="">
-                        </picture>
+                            <picture>
+                                <source srcset="img/tg svg.webp" type="image/webp" class="tg">
+                                <img src="img/tg svg.png" alt="">
+                            </picture>
                         </a>
                     </li>
                 </ul>
             </nav>
             <div class="column">
                 <a href="index.html" alt="Головна сторінка">
-                <picture>
-                    <source srcset="img/logosvgfooter.webp" type="image/webp">
-                    <img src="img/logo svg footer.png" alt="">
-                </picture>
+                    <picture>
+                        <source srcset="img/logosvgfooter.webp" type="image/webp">
+                        <img src="img/logo svg footer.png" alt="">
+                    </picture>
                 </a>
                 <span class="since">since 2025</span>
             </div>
