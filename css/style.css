@@ -58,13 +58,11 @@ header {
 }
 
 .header__text {
-    display: flex;
-    justify-content: center;
     border-radius: 20rem;
-    background-color: rgba(172, 172, 170, 0.3);
+    background-color: rgba(172, 172, 170, 0.7);
+    backdrop-filter: blur(4px);
     text-decoration: none;
     font-size: 14rem;
-    display: none;
 }
 
 .header__text a {
@@ -208,14 +206,16 @@ main {
     list-style: none;
 }
 
-#navigation {
-    position: relative;
+#navigation1 {
+    position: fixed;
+    top: 0;
+    width: 60vw;
+    right: -100%; 
+    height: 100vh;
     padding: 22px 0 0 0;
+    z-index: 2;
 }
 
-.text_item {
-    position: absolute;
-}
 #black_bg {
     display: none;
     position: fixed;
@@ -269,12 +269,9 @@ main {
   }
   
   @media screen and (min-width: 500px) {
-    #menu {
+    #navigation1{
       position: static;
-      display: flex;
-      justify-content: space-between;
-      gap: 10px;
-      background-color: blue;
+      width: 100%;
     }
     
     #burger {
@@ -310,6 +307,9 @@ main {
         position: absolute;
         bottom: 0rem;
         right: 0rem;
+    }
+    .header__text {
+        background-color: rgba(172, 172, 170, 0.3);
     }
 }
 

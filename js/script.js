@@ -1,14 +1,16 @@
+// const navigation1 = document.querySelector("#navigation1")
+
 burger.onclick = () => {
-    navigation.style.left = 0;
+    navigation1.style.right = "0";
     black_bg.style.display = "block"
   }
   
   cancel.onclick = () => {
-    menu.style.left = "-100%"
+    navigation1.style.right = "-100%"
     black_bg.style.display = "none"
   }
   
   black_bg.onclick = () => {
-    menu.style.left = "-100%"
+    navigation1.style.right = "-100%"
     black_bg.style.display = "none"
   }
