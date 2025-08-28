@@ -11,8 +11,8 @@
 
 <body>
     <div id="black_bg"></div>
-    <header class="header flex-between wrapper">
-        <div id="navigation">
+    <header class="header wrapper">
+        <div id="navigation" class="flex-between">
             <div>
                 <a href="index.html">
                     <picture>
@@ -21,9 +21,9 @@
                     </picture>
                 </a>
             </div>
-            <nav class="header__text text">
+            <nav class="header__text text flex-between">
                 <ul class="align-items text__item item">
-                    <li class="cancel"><a href="">X</a></li>
+                    <li id="cancel"><a href="">X</a></li>
                     <li>
                         <a href="#">Про нас</a>
                     </li>
@@ -45,7 +45,7 @@
                         <img src="img/phone svg.png" alt="">
                     </picture>
                 </a>
-                <p class="phone__link">+38 050 505 50 55</p>
+                <p class="phone">+38 050 505 50 55</p>
             </div>
             <div id="burger"></div>
         </div>
@@ -116,6 +116,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

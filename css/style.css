@@ -3,14 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     font-size: 1px;
+
 }
+
 body {
     background-image: radial-gradient(circle at center, #34619d 0%, #34619d 1%, #1d3b6e 100%);
     font-family: "Arial";
     cursor: url(../img/cursor.cur), default;
-    
+
 }
 
 .wrapper {
@@ -18,26 +21,32 @@ body {
     margin: 0 auto;
     padding: 0 15rem;
 }
+
 header {
     width: 100%;
     z-index: 100;
 }
+
 .flex-between {
     display: flex;
     justify-content: space-between;
 }
-.flex-around{
+
+.flex-around {
     display: flex;
     justify-content: space-around;
 }
+
 .flex-direction {
     display: flex;
     flex-direction: row;
 }
+
 .align-items {
     display: flex;
     align-items: center;
 }
+
 .column {
     display: flex;
     flex-direction: column;
@@ -54,6 +63,8 @@ header {
     border-radius: 20rem;
     background-color: rgba(172, 172, 170, 0.3);
     text-decoration: none;
+    font-size: 14rem;
+    display: none;
 }
 
 .header__text a {
@@ -79,7 +90,10 @@ header {
     color: #fff;
 }
 
-
+.phone {
+    font-size: 16rem;
+    color: #fff;
+}
 .text2 {
     color: #fff;
     font-style: italic;
@@ -117,7 +131,7 @@ h1 {
 .text5 {
     color: #1e3c6f;
     font-weight: bold;
-    font-family: "Arial";
+    font-size: 16rem;
 }
 
 .button a {
@@ -161,40 +175,46 @@ h1 {
     color: #204075;
     text-align: left;
 }
+
 a {
     cursor: url(../img/cursor2.cur), default;
     transition: all .9s ease;
 }
+
 li>a:hover {
     color: yellow;
 }
+
 .button>a:hover {
     color: black;
 }
+
 main {
     position: relative;
-    
-    
+
 }
-.mainball img {
+
+.mainball  {
     overflow: hidden;
 }
+
 .main_text {
     padding: 120rem 35rem;
+    font-size: 16rem;
+    flex-wrap: wrap;
 }
+
 .ul {
     list-style: none;
 }
+
 #navigation {
     position: relative;
+    padding: 22px 0 0 0;
 }
+
 .text_item {
     position: absolute;
-}
-#cancel {
-    position: absolute;
-    top: 15px;
-    right: 15px;
 }
 #black_bg {
     display: none;
@@ -203,31 +223,70 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);;
-    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(4px);
-}
-#burger {
-    width: 50rem;
-    height: 5rem;
-    color: #fff;
-    transform: translateY(150%);
+    z-index: 2;
+  }
+#cancel {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  #burger,
+  #burger:before,
+  #burger:after{
+    width: 50px;
+    height: 5px;
+    background-color: #fff;
+  }
+  
+  #burger_container {
     position: relative;
-}
-#burger::before,
-#burger::after {
+    right: 50px;
+    
+  }
+  #burger {
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background-color: #fff;
+    transform: translateY(150%);
+    right: 20px;
+  }
+  #burger:before,
+  #burger:after {
     content: "";
     position: absolute;
-    width: 50rem;
-    height: 5rem;
     left: 0;
-}
-#burger::before {
-    top: -10rem;
-}
-#burger::after {
-    bottom: -10rem;
-}
+  }
+  
+  #burger:before {
+    top: -10px;
+  }
+  
+  #burger:after {
+    bottom: -10px
+  }
+  
+  @media screen and (min-width: 500px) {
+    #menu {
+      position: static;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      background-color: blue;
+    }
+    
+    #burger {
+      display: none;
+    }
+    .header__text {
+        display: block;
+    }
+    #cancel {
+        display: none;
+    }
+  }
 
 @media screen and (min-width: 768rem) {
     html {
@@ -240,23 +299,25 @@ main {
     html {
         font-size: 1rem;
     }
-   .mainball {
-    position: absolute;
-    bottom: 0;
-    right: -259rem;
-}
-.mainball img {
-    position: absolute;
-    bottom: 0rem;
-    right: 0rem;    
-}
+
+    .mainball {
+        position: absolute;
+        bottom: 0;
+        right: -259rem;
+    }
+
+    .mainball img {
+        position: absolute;
+        bottom: 0rem;
+        right: 0rem;
+    }
 }
 
 @media screen and (min-width: 1440rem) {
     html {
         font-size: 1.1rem;
     }
-    
+
 }
 
 @media screen and (min-width: 1920rem) {
