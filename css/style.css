@@ -37,20 +37,9 @@ header {
     justify-content: space-around;
 }
 
-.flex-direction {
-    display: flex;
-    flex-direction: row;
-}
-
 .align-items {
     display: flex;
     align-items: center;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
 }
 
 .logo__manager {
@@ -92,6 +81,7 @@ header {
     font-size: 16rem;
     color: #fff;
 }
+
 .text2 {
     color: #fff;
     font-style: italic;
@@ -99,12 +89,15 @@ header {
 }
 
 h1 {
-    width: 687rem;
+    /* width: 687rem; */
+    width: 100%;
     font-size: 48rem;
     text-transform: uppercase;
     color: #fff;
     font-weight: 800;
     padding: 7rem 1rem;
+    flex-wrap: wrap
+    ;
 }
 
 .text1 {
@@ -192,8 +185,8 @@ main {
 
 }
 
-.mainball  {
-    overflow: hidden;
+.mainball {
+    display: none;
 }
 
 .main_text {
@@ -210,7 +203,7 @@ main {
     position: fixed;
     top: 0;
     width: 60vw;
-    right: -100%; 
+    right: -100%;
     height: 100vh;
     padding: 22px 0 0 0;
     z-index: 2;
@@ -226,108 +219,125 @@ main {
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(4px);
     z-index: 2;
-  }
+}
+
 #cancel {
     position: absolute;
     top: 15px;
     right: 15px;
-  }
-  #burger,
-  #burger:before,
-  #burger:after{
+}
+
+#burger,
+#burger:before,
+#burger:after {
     width: 50px;
     height: 5px;
     background-color: #fff;
-  }
-  
-  #burger_container {
+}
+
+#burger_container {
     position: relative;
     right: 50px;
-    
-  }
-  #burger {
-    position: absolute;
-    width: 50px;
-    height: 5px;
+
+}
+
+#burger {
+    display: block;
+    position: fixed;
+    width: 50rem;
+    height: 5rem;
     background-color: #fff;
     transform: translateY(150%);
-    right: 20px;
-  }
-  #burger:before,
-  #burger:after {
-    content: "";
-    position: absolute;
-    left: 0;
-  }
-  
-  #burger:before {
-    top: -10px;
-  }
-  
-  #burger:after {
-    bottom: -10px
-  }
-  
-  @media screen and (min-width: 500px) {
-    #navigation1{
-      position: static;
-      width: 100%;
+    right: 20rem;
+}
+
+#burger::before,
+#burger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 50rem;
+  height: 5rem;
+  background-color: #fff;
+}
+#burger::before {
+  top: -10rem;
+}
+#burger::after {
+  bottom: -10rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: .9px;
     }
-    
+
+    h1 {
+        font-size: 40rem;
+    }
+
+    .main_text {
+        padding: 80rem 20rem;
+    }
+
+    .header__phone {
+        flex-direction: row;
+    }
+
     #burger {
-      display: none;
+        display: none;
     }
-    .header__text {
-        display: block;
+    #navigation1 {
+        position: static;
+        width: auto;
+        height: auto;
+        display: flex;
     }
     #cancel {
         display: none;
     }
-  }
-
-@media screen and (min-width: 768rem) {
+    .text__item {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width: 1024rpx) {
     html {
-        font-size: .9rem;
+        font-size: 1px;
     }
 
-}
+    h1 {
+        font-size: 48rem;
+    }
 
-@media screen and (min-width: 1024rem) {
-    html {
-        font-size: 1rem;
+    .main {
+        flex-direction: row;
     }
 
     .mainball {
         position: absolute;
         bottom: 0;
-        right: -259rem;
+        right: -200rem;
     }
 
-    .mainball img {
-        position: absolute;
-        bottom: 0rem;
-        right: 0rem;
-    }
-    .header__text {
-        background-color: rgba(172, 172, 170, 0.3);
-    }
 }
 
-@media screen and (min-width: 1440rem) {
+@media screen and (min-width: 1440px) {
     html {
-        font-size: 1.1rem;
+        font-size: 1.1px;
     }
 
 }
 
 @media screen and (min-width: 1920rem) {
     html {
-        font-size: 1.2rem;
+        font-size: 1.2px;
     }
 }
 
 @media screen and (min-width: 2200rem) {
     html {
-        font-size: 1.7rem;
+        font-size: 1.7px;
     }
 }
