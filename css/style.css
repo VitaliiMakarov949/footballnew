@@ -91,13 +91,11 @@ header {
 h1 {
     /* width: 687rem; */
     width: 100%;
-    font-size: 48rem;
+    font-size: 25rem;
     text-transform: uppercase;
     color: #fff;
     font-weight: 800;
     padding: 7rem 1rem;
-    flex-wrap: wrap
-    ;
 }
 
 .text1 {
@@ -192,7 +190,7 @@ main {
 .main_text {
     padding: 120rem 35rem;
     font-size: 16rem;
-    flex-wrap: wrap;
+    width: 100%;
 }
 
 .ul {
@@ -300,6 +298,9 @@ main {
     .text__item {
         display: flex;
         justify-content: space-between;
+    }
+    .mainball {
+        display: block;
     }
 }
 @media screen and (min-width: 1024rpx) {
