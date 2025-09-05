@@ -139,6 +139,7 @@ h1 {
     color: #1e3c6f;
     font-weight: bold;
     font-size: 16rem;
+    text-align: center;
 }
 
 .button a {
@@ -343,6 +344,7 @@ main {
         justify-content: space-between;
         align-items: center;
     }
+    
 }
 @media screen and (min-width: 1024rpx) {
     html {
