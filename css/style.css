@@ -420,14 +420,14 @@ main {
 
 }
 
-@media screen and (min-width: 1920rem) {
+@media screen and (min-width: 1920px) {
     html {
-        font-size: 1.2px;
+        font-size: 1.7px;
     }
 }
 
-@media screen and (min-width: 2200rem) {
+@media screen and (min-width: 2200px) {
     html {
-        font-size: 1.7px;
+        font-size: 1.9px;
     }
 }
