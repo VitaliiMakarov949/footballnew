@@ -170,7 +170,7 @@ h1 {
 }
 
 .text4 {
-    font-size: 20rem;
+    font-size: 14rem;
     color: #fff;
     font-weight: bold;
     padding: 10rem 8rem;
@@ -213,10 +213,15 @@ main {
 }
 
 .mainball {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
     display: none;
 }
 
 .main_text {
+    position: relative;
+    z-index: 2;
     padding: 80rem 0rem;
     font-size: 16rem;
     width: 100%;
@@ -303,6 +308,7 @@ main {
 .since {
     text-align: right;
 }
+
 @media screen and (min-width: 387px) {
     .header__phone a {
         position: absolute;
@@ -310,16 +316,18 @@ main {
         left: 5px;
         padding: 10rem 10rem;
         text-decoration: none;
-    
+
     }
 }
+
 @media screen and (min-width: 375px) {
     .header__phone a {
         padding: 10rem 10rem;
         text-decoration: none;
-    
+
     }
 }
+
 @media screen and (min-width: 768px) {
     html {
         font-size: .9px;
@@ -332,21 +340,27 @@ main {
     .main_text {
         padding: 80rem 20rem;
     }
+
     header {
         justify-content: space-between;
         align-items: center;
         gap: 30px;
     }
+
     .header__phone {
-        
+
         flex-direction: row;
         padding: 0;
         text-decoration: none;
 
     }
-    .header__phone a{
+
+    .header__phone a {
         position: static;
         padding: 0;
+    }
+    .text4 {
+        font-size: 20rem;
     }
     #burger {
         display: none;
@@ -389,7 +403,7 @@ main {
         align-items: center;
     }
 
-    
+
 }
 
 @media screen and (min-width: 1024rpx) {
